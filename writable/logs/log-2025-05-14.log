@@ -1,0 +1,96 @@
+ERROR - 2025-05-14 02:08:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci-sikasn\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\ci-sikasn\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_sikasn', 3306, '', 0)
+#1 C:\xampp\htdocs\ci-sikasn\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci-sikasn\system\Session\Handlers\DatabaseHandler.php(100): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#4 C:\xampp\htdocs\ci-sikasn\system\Session\Session.php(920): session_start()
+#5 C:\xampp\htdocs\ci-sikasn\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#6 C:\xampp\htdocs\ci-sikasn\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#7 C:\xampp\htdocs\ci-sikasn\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#8 C:\xampp\htdocs\ci-sikasn\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp\htdocs\ci-sikasn\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 C:\xampp\htdocs\ci-sikasn\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#11 C:\xampp\htdocs\ci-sikasn\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 C:\xampp\htdocs\ci-sikasn\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#13 C:\xampp\htdocs\ci-sikasn\system\Common.php(971): service('session')
+#14 C:\xampp\htdocs\ci-sikasn\app\Filters\AuthFilter.php(21): session()
+#15 C:\xampp\htdocs\ci-sikasn\system\Filters\Filters.php(203): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#16 C:\xampp\htdocs\ci-sikasn\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore(Array)
+#17 C:\xampp\htdocs\ci-sikasn\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+#18 C:\xampp\htdocs\ci-sikasn\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\ci-sikasn\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\ci-sikasn\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\ci-sikasn\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\ci-sikasn\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci-sikasn\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\ci-sikasn\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci-sikasn\system\Session\Handlers\DatabaseHandler.php(100): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#3 C:\xampp\htdocs\ci-sikasn\system\Session\Session.php(920): session_start()
+#4 C:\xampp\htdocs\ci-sikasn\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#5 C:\xampp\htdocs\ci-sikasn\system\Config\Services.php(710): CodeIgniter\Session\Session->start()
+#6 C:\xampp\htdocs\ci-sikasn\system\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#7 C:\xampp\htdocs\ci-sikasn\system\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp\htdocs\ci-sikasn\system\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 C:\xampp\htdocs\ci-sikasn\system\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+#10 C:\xampp\htdocs\ci-sikasn\system\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\ci-sikasn\system\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+#12 C:\xampp\htdocs\ci-sikasn\system\Common.php(971): service('session')
+#13 C:\xampp\htdocs\ci-sikasn\app\Filters\AuthFilter.php(21): session()
+#14 C:\xampp\htdocs\ci-sikasn\system\Filters\Filters.php(203): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#15 C:\xampp\htdocs\ci-sikasn\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore(Array)
+#16 C:\xampp\htdocs\ci-sikasn\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+#17 C:\xampp\htdocs\ci-sikasn\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 C:\xampp\htdocs\ci-sikasn\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#19 C:\xampp\htdocs\ci-sikasn\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#20 C:\xampp\htdocs\ci-sikasn\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#21 C:\xampp\htdocs\ci-sikasn\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#22 {main}
+CRITICAL - 2025-05-14 02:08:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(100): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(920): session_start()
+ 4 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+12 SYSTEMPATH\Common.php(971): service('session')
+13 APPPATH\Filters\AuthFilter.php(21): session()
+14 SYSTEMPATH\Filters\Filters.php(203): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+15 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+16 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+21 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci-sikasn\\public\\index.php')
+DEBUG - 2025-05-14 02:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+DEBUG - 2025-05-14 02:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+DEBUG - 2025-05-14 02:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+DEBUG - 2025-05-14 02:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2025-05-14 05:19:30 --> ErrorException: Undefined variable $rowNumber
+[Method: GET, Route: presensi/presensi-data]
+in APPPATH\Views\presensi\presensiData.php on line 128.
+ 1 APPPATH\Views\presensi\presensiData.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rowNumber', 'C:\\xampp\\htdocs\\ci-sikasn\\app\\Views\\presensi\\presensiData.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci-sikasn\\app\\Views\\presensi\\presensiData.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('presensi/presensiData', [], true)
+ 5 APPPATH\Controllers\PresensiController.php(100): view('presensi/presensiData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PresensiController->presensiData()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PresensiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci-sikasn\\public\\index.php')

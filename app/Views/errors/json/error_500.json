@@ -1,0 +1,6 @@
+{
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "Something went wrong on our server",
+    "request_id": "<?= time() ?>"
+}
