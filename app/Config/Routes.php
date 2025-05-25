@@ -24,6 +24,26 @@ $routes->group('presensi', function ($routes) {
     $routes->get('presensi-data', 'PresensiController::presensiData', ['as' => 'presensiData']);
 });
 
+$routes->group('penduduk', function ($routes) {
+    // List all penduduk data
+    $routes->get('penduduk-data', 'PendudukController::index', ['as' => 'pendudukData']);
+
+    // Get specific penduduk by NIK
+    $routes->get('penduduk-details/(:segment)', 'PendudukController::show/$1', ['as' => 'pendudukDetails']);
+
+    // Create new penduduk
+    $routes->get('penduduk-create', 'PendudukController::create', ['as' => 'pendudukCreate']);
+    $routes->post('penduduk-store', 'PendudukController::store', ['as' => 'pendudukStore']);
+
+    // Edit penduduk
+    $routes->get('penduduk-edit/(:segment)', 'PendudukController::edit/$1', ['as' => 'pendudukEdit']);
+    $routes->post('penduduk-update/(:segment)', 'PendudukController::update/$1', ['as' => 'pendudukUpdate']);
+
+    // Delete penduduk
+    $routes->get('penduduk-delete/(:segment)', 'PendudukController::delete/$1', ['as' => 'pendudukDelete']);
+});
+
+
 // $routes->group('sse', function ($routes) {
 //     $routes->get('sse-data', 'SseController::sseData', ['as' => 'sseData']);
 // });
