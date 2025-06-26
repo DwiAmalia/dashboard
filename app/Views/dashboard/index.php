@@ -3,6 +3,14 @@
 <?= $this->section('script'); ?>
 <script src="<?= base_url('assets/js/homeOneChart.js') ?>"></script>
 
+<!-- ApexCharts & XLSX -->
+<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.49.1/dist/apexcharts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+
 <script>
     // ================================ Column Charts Chart Start ================================ 
     var options = {

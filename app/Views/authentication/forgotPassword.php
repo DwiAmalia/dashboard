@@ -15,7 +15,7 @@
         <div class="auth-right py-32 px-24 d-flex flex-column justify-content-center">
             <div class="max-w-464-px mx-auto w-100">
                 <div>
-                    <h4 class="mb-12">Forgot Password</h4>
+                    <h4 class="mb-12">Lupa Kata Sandi</h4>
                     <p class="mb-32 text-secondary-light text-lg">Enter the email address associated with your account and we will send you a link to reset your password.</p>
                 </div>
                 <form action="#">

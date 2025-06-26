@@ -18,8 +18,8 @@
                     <a href="<?= route_to('index') ?>" class="mb-40 max-w-290-px">
                         <img src="<?= base_url('assets/images/logo.png') ?>" alt="">
                     </a>
-                    <h4 class="mb-12">Sign In to your Account</h4>
-                    <p class="mb-32 text-secondary-light text-lg">Welcome back! please enter your detail</p>
+                    <h4 class="mb-12">Masuk</h4>
+                    <p class="mb-32 text-secondary-light text-lg">Selamat Datang! Masukkan Username dan Kata Sandi Anda</p>
                 </div>
                 <!-- Display error message if any -->
                 <?php if (session()->getFlashdata('error')): ?>
@@ -47,7 +47,7 @@
                             <span class="icon top-50 translate-middle-y">
                                 <iconify-icon icon="solar:lock-password-outline"></iconify-icon>
                             </span>
-                            <input type="password" name="password" id="password" class="form-control h-56-px bg-neutral-50 radius-12" placeholder="Password" required>
+                            <input type="password" name="password" id="password" class="form-control h-56-px bg-neutral-50 radius-12" placeholder="Kata Sandi" required>
                         </div>
                         <span class="toggle-password ri-eye-line cursor-pointer position-absolute end-0 top-50 translate-middle-y me-16 text-secondary-light" data-toggle="#password"></span>
                     </div>
@@ -55,17 +55,17 @@
                         <div class="d-flex justify-content-between gap-2">
                             <div class="form-check style-check d-flex align-items-center">
                                 <input class="form-check-input border border-neutral-300" type="checkbox" value="" id="remeber">
-                                <label class="form-check-label" for="remeber">Remember me </label>
+                                <label class="form-check-label" for="remeber">Simpan Data </label>
                             </div>
-                            <a href="<?= route_to('forgotPassword') ?>" class="text-primary-600 fw-medium">Forgot Password?</a>
+                            <a href="<?= route_to('forgotPassword') ?>" class="text-primary-600 fw-medium">Lupa Kata Sandi?</a>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary text-sm btn-sm px-12 py-16 w-100 radius-12 mt-32">Sign In</button>
+                    <button type="submit" class="btn btn-primary text-sm btn-sm px-12 py-16 w-100 radius-12 mt-32">Masuk</button>
                 </form>
 
 
                 <div class="mt-32 text-center text-sm">
-                    <p class="mb-0">Don’t have an account? <a href="<?= route_to('signup') ?>" class="text-primary-600 fw-semibold">Sign Up</a></p>
+                    <p class="mb-0">Tidak mempunyai akun? <a href="<?= route_to('signup') ?>" class="text-primary-600 fw-semibold">Daftar</a></p>
                 </div>
 
             </div>
